@@ -320,7 +320,7 @@ public class BooleanUtil {
 	 * @return 结果值
 	 */
 	public static String toString(final boolean bool, final String trueString, final String falseString) {
-		return bool ? trueString : falseString;
+		return bool ? trueString.trim().toLowerCase() : falseString.trim().toLowerCase();
 	}
 
 	/**
@@ -342,7 +342,7 @@ public class BooleanUtil {
 		if (bool == null) {
 			return nullString;
 		}
-		return bool ? trueString : falseString;
+		return bool ? trueString.trim().toLowerCase() : falseString.trim().toLowerCase();
 	}
 
 	/**
